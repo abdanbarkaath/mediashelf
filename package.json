@@ -3,13 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "workspaces": ["apps/*", "packages/*"],
-
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "private": "true"
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "npm@10.1.0"
 }
