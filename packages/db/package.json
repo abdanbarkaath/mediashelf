@@ -1,0 +1,14 @@
+{
+  "name": "@mediashelf/db",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "prisma": "prisma",
+    "smoke": "node scripts/smoke.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.16.1",
+    "prisma": "^5.16.1"
+  }
+}
